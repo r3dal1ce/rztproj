@@ -12,6 +12,7 @@ body{
     height: 100%;
     display: flex;
     align-items: flex-start;
+    font-size: small;
 }
 
 
@@ -45,6 +46,7 @@ body{
 	width: 100%;
 	border: none;
 	margin-bottom: 20px;
+    /* text-align: left; */
 }
 .table thead th {
 	font-weight: bold;
