@@ -4,7 +4,7 @@ html {
 }
 
 body{
-    background-color: #c3c3c3;
+    background-color: #ffffff;
     margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -53,7 +53,7 @@ body{
 	text-align: left;
 	border: none;
 	padding: 10px 15px;
-	background: #d8d8d8;
+	background: #05bc52;
 	font-size: 14px;
 }
 .table thead tr th:first-child {
@@ -72,11 +72,21 @@ body{
 .table tbody tr:nth-child(even){
 	background: #f3f3f3;
 }
+.table tbody tr:nth-child(odd){
+    background: #dddddd;
+}
 .table tbody tr td:first-child {
 	border-radius: 8px 0 0 8px;
 }
 .table tbody tr td:last-child {
 	border-radius: 0 8px 8px 0;
+}
+
+.comment{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color:transparent;
+    outline: none;
 }
 
 

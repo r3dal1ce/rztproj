@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
-    <link rel="stylesheet" href="styles.css"><!--Стили-->
-    <link rel="icon images" href="logos/262025939 (1).svg"> <!--Лого иконки-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Стили-->
+    <link rel="icon images" href="logos/262025939 (1).svg">
+    <!--Лого иконки-->
 
 </head>
 
@@ -21,10 +23,11 @@
             </div>
             <div class="exportButton">
                 <!--Кнопка для загрузки контента на компьютер-->
+                <!-- <button id="export"></button> -->
 
             </div>
             <div class="importButton">
-                <!--Кнопка для выгрзки данных из компьютера-->
+                <!--Кнопка для выгурзки данных из компьютера-->
 
             </div>
             <div class="profileLink">
@@ -34,62 +37,69 @@
 
         </aside>
     </div>
-    <div class="workTable">
-        <table id="table1" class="table">
-            <thead>
-                <!--Параметры берем из 1с-->
-                <tr>
-                    <th>Номер ПТК</th>
-                    <th>Квитанция СЦ</th>
-                    <th>Сервис-центр</th>
-                    <th>Принят (дата)</th>
-                    <th>Дата приема СЦ</th>
-                    <th>В сервисе (дней)</th>
-                    <th>Модель</th>
-                    <th>Ориг S/N</th>
-                    <th>S/N</th>
-                    <th>Неисправность</th>
-                    <th>Статус СЦ</th>
-                    <th>Комментарий СЦ</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!--Будем загружать из таблицы. Эта часть для демонстрации-->
-                <tr>
-                    <th>РОЗ10244319</th>
-                    <th>919060</th> <!-- Изменяемое поле -->
-                    <th>ERC ожидание зачета</th>
-                    <th>19.08.21</th>
-                    <th>06.09.21</th>
-                    <th>9</th>
-                    <th>Мобильный телефон 2E F534L 2018 DualSim Black</th>
-                    <th>355423650520799</th>
-                    <th>355423650520799</th>
-                    <th>Акт АСЦ  //// перестал реагировать дисплей </th>
-                    <th>На диагностике</th>
-                    <th>Тест</th>
+    <table id="table1" class="table">
+        <thead>
+            <!--Параметры берем из 1с-->
+            <tr>
+                <th>Номер ПТК</th>
+                <th>Квитанция СЦ</th>
+                <th>Сервис-центр</th>
+                <th>Принят (дата)</th>
+                <th>Дата приема СЦ</th>
+                <th>В сервисе (дней)</th>
+                <th>Модель</th>
+                <th>Ориг S/N</th>
+                <th>S/N</th>
+                <th>Неисправность</th>
+                <th>Статус СЦ</th>
+                <th>Комментарий СЦ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Будем загружать из таблицы. Эта часть для демонстрации-->
+            <tr>
+                <th>РОЗ10244319</th>
+                <th>919060</th> <!-- Изменяемое поле -->
+                <th>ERC ожидание зачета</th>
+                <th>19.08.21</th>
+                <th>06.09.21</th>
+                <th>9</th>
+                <th>Мобильный телефон 2E F534L 2018 DualSim Black</th>
+                <th>355423650520799</th>
+                <th>355423650520799</th>
+                <th>Акт АСЦ //// перестал реагировать дисплей </th>
+                <th><select name="statusRem">
+                    <option>На диагностике</option>
+                    <option>В ремонте</option>
+                    <option>Списан в АСЦ</option>
+                    <option>Ожидание зачета</option>
+                    <option>Отказ в гарантии</option>
+                    <option>Платный ремонт</option>
+                  </select></th>
+                <th><textarea placeholder="Комментарий:" class="comment"></textarea><br><button
+                        class="button1">Сохранить</button><button class="button2">История</button></th>
 
-                </tr>
-                <tr>
-                    <th>РОЗ10242349</th>
-                    <th>919234</th> <!-- Изменяемое поле -->
-                    <th>ERC ожидание зачета</th>
-                    <th>14.08.21</th>
-                    <th>04.09.21</th>
-                    <th>12</th>
-                    <th>Мобильный телефон 2E F534L 2018 DualSim White</th>
-                    <th>3554236505201233</th>
-                    <th>3554236505201233</th>
-                    <th>Не включается</th>
-                    <th>В ремонте</th>
-                    <th>Тест 2</th>
+            </tr>
+            <tr>
+                <th>РОЗ10242349</th>
+                <th>919234</th> <!-- Изменяемое поле -->
+                <th>ERC ожидание зачета</th>
+                <th>14.08.21</th>
+                <th>04.09.21</th>
+                <th>12</th>
+                <th>Мобильный телефон 2E F534L 2018 DualSim White</th>
+                <th>3554236505201233</th>
+                <th>3554236505201233</th>
+                <th>Не включается</th>
+                <th>В ремонте</th>
+                <th><textarea placeholder="Комментарий:" class="comment"></textarea><br><button
+                        class="button1">Сохранить</button><button class="button2">История</button></th>
 
-                </tr>
-            </tbody>
+            </tr>
+        </tbody>
 
-        </table>
+    </table>
 
-    </div>
 
 
 </body>
